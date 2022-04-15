@@ -1,0 +1,132 @@
+TODO: COMMENT BOX TODO: PLAY WITH BACKGROUND COLOR ON LANDING PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Embrace Christian Church</title>
+	</head>
+	<body>
+		<!-- NAVIGATION -->
+		<nav class="navbar">
+			<div class="navLogo">
+				<a href="./index.html"
+					><img id="logo" src="./images/ecc-only3.svg" alt="ECC logo"
+				/></a>
+			</div>
+			<div class="navLinks">
+				<ul>
+					<li><a href="./about.html">About</a></li>
+					<li><a href="./events.html">Events</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li><a href="./giving.html">Giving</a></li>
+				</ul>
+			</div>
+			<!-- HAMBURGER MENU FOR MOBILE -->
+			<div id="hamburger--menu">
+				<div id="hamburger--top"></div>
+				<div id="hamburger--middle"></div>
+				<div id="hamburger--bottom"></div>
+			</div>
+			<!-- MOBILE MENU LINKS -->
+			<div id="hamburger--mobile-navLinks">
+				<h4 id="closeMenu">Close</h4>
+				<ul>
+					<li><a href="./about.html">About</a></li>
+					<li><a href="./events.html">Events</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li><a href="./giving.html">Giving</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<header id="header">
+			<img id="headerImg" src="./images/praise1.jpg" alt="praise" />
+			<!-- <div id="overlay"></div> -->
+			<div class="headerContent">
+				<h1>Embrace Christian Church</h1>
+				<h3>Welcome to ECC where our home is your home!</h3>
+				<div class="headerButton">
+					<button class="btn btn--cta">Join Our Home</button>
+					<!-- <button class="btn btn--giving">
+						<a href="./giving.html">Giving</a>
+					</button> -->
+				</div>
+			</div>
+			<img
+				class="downArrow"
+				src="./images/down-arrow-svgrepo-com.svg"
+				alt="down arrow"
+			/>
+		</header>
+
+		<!-- SECTION 1 -->
+		<section id="section1">
+			<div>
+				<video autoplay loop muted id="video">
+					<source src="./video/Pexels Videos 2268807.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div></div>
+		</section>
+
+		<!-- SECTION 2 -->
+		<section id="section2">
+			<h2 class="benefitsTitle">Why join ECC?</h2>
+			<div class="benefitsCards">
+				<div class="card landing--card hidden">
+					<img
+						class="benefitsImg filter-green"
+						src="./images/church-svgrepo-com.svg"
+						alt="church image"
+					/>
+					<h3>Great Community</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+						numquam tenetur, quos, reiciendis iste exercitationem qui nulla
+						ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
+						dolorum earum odio ipsa modi.
+					</p>
+				</div>
+				<div class="card landing--card hidden">
+					<img
+						class="benefitsImg filter-blue"
+						src="./images/video-call-svgrepo-com.svg"
+						alt="video call"
+					/>
+					<h3>Worship from home</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+						numquam tenetur, quos, reiciendis iste exercitationem qui nulla
+						ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
+						dolorum earum odio ipsa modi.
+					</p>
+				</div>
+				<div class="card landing--card hidden">
+					<img
+						class="benefitsImg filter-pink"
+						src="./images/charity-svgrepo-com.svg"
+						alt="charity"
+					/>
+					<h3>Tithes benefit charities</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+						numquam tenetur, quos, reiciendis iste exercitationem qui nulla
+						ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
+						dolorum earum odio ipsa modi.
+					</p>
+				</div>
+			</div>
+			<div class="otherButton">
+				<button class="btn btn--home btn--card-bottom">Join Our Home</button>
+			</div>
+		</section>
+
+		<!-- JAVASCRIPT -->
+		<script src="./index.js"></script>
+	</body>
+</html>

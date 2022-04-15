@@ -1,0 +1,95 @@
+/* ******************************************************* */
+/********* ABOUT PAGE **************/
+.selectorListOuter {
+	display: flex;
+	justify-content: center;
+}
+
+.selectorList {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	/* border: 1px solid black; */
+	/* border-radius: 25px; */
+	width: fit-content;
+	/* padding: 6px 12px; */
+}
+
+.selectorList > li {
+	border: 1px solid black;
+	border-radius: 25px;
+}
+
+.selectorList > li:first-child {
+	margin-right: 20px;
+}
+
+/* PAGE HIDE */
+.pageHide {
+	/* visibility: hidden; */
+	display: none;
+}
+
+.activeLink {
+	background-color: blue;
+}
+
+/***************** PASTOR SECTION */
+#aboutPastor {
+	/* height: 25vh; */
+	background-color: #ececec;
+	text-align: center;
+	padding: 0px 10px;
+}
+
+#aboutPastor > img {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+#aboutPastor > h3 {
+	font-size: 22px;
+	margin-bottom: 16px;
+}
+
+#aboutPastor > p {
+	letter-spacing: 1.3px;
+}
+
+.aboutParagraph > p {
+	margin-bottom: 16px;
+	letter-spacing: 1.3px;
+}
+
+.about--downArrow {
+	filter: invert(0%) sepia(0%) saturate(7%) hue-rotate(253deg) brightness(103%)
+		contrast(100%);
+	position: relative;
+	width: 1.1em;
+	transform: rotate(180deg);
+	transition: all 0.2s ease-in-out;
+}
+
+.open-rotate {
+	transform: rotate(0deg);
+}
+
+.about--hidden {
+	display: none;
+}
+
+/***************** CHURCH SECTION */
+#aboutChurch {
+	height: 25vh;
+	background-color: red;
+}
+
+#aboutPastor,
+#aboutChurch {
+	margin: 10px 20px;
+}
+
+.aboutParagraph {
+	margin-bottom: 15px;
+	line-height: 1.5em;
+}
