@@ -96,3 +96,4 @@ const toggleChurchPage = () => {
 
 selectorPastor.addEventListener("click", togglePastorPage);
 selectorChurch.addEventListener("click", toggleChurchPage);
+
