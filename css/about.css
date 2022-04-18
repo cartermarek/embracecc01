@@ -1,23 +1,24 @@
 /* ******************************************************* */
 /********* ABOUT PAGE **************/
-.selectorListOuter {
-	display: flex;
-	justify-content: center;
+* {
+	animation-name: pageSlideIn;
+	animation-duration: 1s;
+}
+
+body {
+	background-color: #acb668;
 }
 
 .selectorList {
-	display: flex;
-	justify-content: center;
 	list-style-type: none;
-	/* border: 1px solid black; */
-	/* border-radius: 25px; */
 	width: fit-content;
-	/* padding: 6px 12px; */
 }
 
 .selectorList > li {
 	border: 1px solid black;
-	border-radius: 25px;
+	border-radius: 5px;
+	background-color: #ececec;
+	padding: 4px 10px;
 }
 
 .selectorList > li:first-child {
@@ -36,10 +37,8 @@
 
 /***************** PASTOR SECTION */
 #aboutPastor {
-	/* height: 25vh; */
 	background-color: #ececec;
 	text-align: center;
-	padding: 0px 10px;
 }
 
 #aboutPastor > img {
@@ -57,8 +56,9 @@
 }
 
 .aboutParagraph > p {
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 	letter-spacing: 1.3px;
+	line-height: 1.6;
 }
 
 .about--downArrow {
@@ -92,4 +92,16 @@
 .aboutParagraph {
 	margin-bottom: 15px;
 	line-height: 1.5em;
+}
+
+/* SLIDE IN ANIMATION */
+@keyframes pageSlideIn {
+	from {
+		opacity: 0;
+		transform: translateX(400px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }

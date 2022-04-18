@@ -5,6 +5,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "CormorantGaramond", "Times New Roman", Times, serif;
+	animation-name: pageSlideIn;
+	animation-duration: 1s;
 }
 
 .navLinks > ul {
@@ -36,13 +38,13 @@
 } */
 
 /***** LOGO **********************************/
-.navLogo {
-	/* width: 50px; */
-	/* height: 50px; */
-	/* flex: 1; */
-	/* filter: invert(82%) sepia(83%) saturate(2880%) hue-rotate(104deg)
-			brightness(105%) contrast(107%); */
-}
+/* .navLogo {
+	width: 50px;
+	height: 50px;
+	flex: 1;
+	filter: invert(82%) sepia(83%) saturate(2880%) hue-rotate(104deg)
+			brightness(105%) contrast(107%);
+} */
 
 #logo {
 	max-width: 50px;
@@ -341,40 +343,6 @@ section {
 }
 
 /* *************************************************** */
-/* ********** GIVING PAGE************************* */
-#givingContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 20px;
-}
-
-#charityList {
-	list-style-type: none;
-	padding: 10px 0px;
-	margin: 20px 0px;
-	line-height: 2;
-	border: 1px solid black;
-	width: 70%;
-	max-width: 500px;
-	text-align: center;
-}
-
-#givingContainer > h3 {
-	font-weight: 400;
-	margin-bottom: 30px;
-}
-
-.donateSection {
-	border: 1px solid black;
-	padding: 10px 20px;
-}
-
-.donateSection > div {
-	display: flex;
-	justify-content: space-around;
-	padding: 10px;
-}
 
 /**********************************************************/
 /***************** ANIMATIONS *************************/
@@ -472,5 +440,17 @@ section {
 		height: 100%;
 		position: absolute;
 		z-index: -5;
+	}
+}
+
+/* SLIDE IN ANIMATION */
+@keyframes pageSlideIn {
+	from {
+		opacity: 0;
+		transform: translateX(400px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }
