@@ -5,8 +5,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "CormorantGaramond", "Times New Roman", Times, serif;
+}
+
+.indexBody {
 	animation-name: pageSlideIn;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 }
 
 .navLinks > ul {
@@ -447,7 +450,7 @@ section {
 @keyframes pageSlideIn {
 	from {
 		opacity: 0;
-		transform: translateX(400px);
+		transform: translateX(900px);
 	}
 	to {
 		opacity: 1;

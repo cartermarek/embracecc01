@@ -10,22 +10,12 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
-		<!-- Font Awesome -->
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-			rel="stylesheet"
-		/>
-		<!-- Google Fonts -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- MDB -->
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
-			rel="stylesheet"
-		/>
+		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/about.css" />
+		<script
+			src="https://kit.fontawesome.com/7520723878.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Embrace Christian Church</title>
 	</head>
 	<body>
@@ -72,6 +62,11 @@
 				<div class="offcanvas-body">
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href=""
+								><i class="fa-solid fa-user"></i
+							></a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="./index.html"
 								>Home</a
 							>
@@ -101,296 +96,223 @@
 			</div>
 		</nav>
 
-		<!-- PASTOR / CHURCH VISION -->
+		<div class="indexBody">
+			<!-- PASTOR / CHURCH VISION BUTTONS -->
 
-		<div class="d-flex justify-content-center">
-			<ul class="selectorList d-flex my-3">
-				<li id="pastor" class="activeLink">Pastor</li>
-				<li id="church--vision">Church Vision</li>
-			</ul>
+			<div class="selectorList d-flex justify-content-center my-5">
+				<button type="button" id="pastor" class="btn activeLink">Pastor</button>
+				<button type="button" id="church--vision" class="btn">
+					Church Vision
+				</button>
+			</div>
+
+			<!-- <div class="container selectorList d-flex">
+				<div class="bar bar-grey">
+					<div id="pastor" class="option">
+						Pastor
+					</div>
+					<div id="church--vision" class="option">
+						Church Vision
+					</div>
+				</div>
+				<div class="bar-outer">
+					<div class="bar bar-purple">
+						<div id="pastor" class="option">
+							Pastor
+						</div>
+						<div id="church--vision" class="option">
+							Church Vision
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- <div class="container">
+				<div class="bar bar-grey">
+					<div class="option">ONE</div>
+					<div class="option">TWO</div>
+					<div class="option">THREE</div>
+				</div>
+				<div class="bar-outer">
+					<div class="bar bar-purple">
+						<div class="option">ONE</div>
+						<div class="option">TWO</div>
+						<div class="option">THREE</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- PASTOR PAGE -->
+			<div id="aboutPastor" class="pageBody">
+				<section class="card rounded d-flex flex-column mx-auto">
+					<!-- <div class="py-3 mb-3"> -->
+					<img
+						class="card-img-top"
+						src="./images/pastor-tony.jpg"
+						alt="pastor tony and wife"
+					/>
+					<!-- </div> -->
+					<div class="card-body px-5 py-4">
+						<h3 class="">
+							Biography Duwayne "Tony" Smith, Pastor of Embrace Christian Church
+						</h3>
+						<div class="aboutParagraph">
+							<p class="text-start text-secondary">
+								Duwayne "Tony" Smith entered this world on August 16, 1959, to
+								the union of the late Tucker Smith and Bertha Smith. From his
+								parent's union, Pastor Tony is the second child of five, three
+								brothers and one sister. Tony attended public schools in
+								Hillsborough County, graduated June of 1977 from Brandon High
+								School, Brandon, Florida. He continued his educational pursuit
+								at Hillsborugh Community College (HCC) where he was a member of
+								the baseball team from 1977 to 1979 and earned his Associate of
+								Arts degree. Pastor Tony continued the studying of God's word at
+								Liberty University, Tabernacle Bible College and Seminary wheree
+								he earned his Bachelor of Arts degree in the Religious Art.
+								Currently, he is working on earning his Master's degree and will
+								not stop there!
+							</p>
+
+							<p class="text-start text-secondary">
+								During the summer of July 1987, Pastor Tony met his soul mate,
+								Fayeshawn Devon Davis. On November 11, 1989, they were joined in
+								holy matrimony. The proud parents of three beautiful children:
+								Lauren Dione Smith White, Devin Anthony Smith, Destiny Alexis
+								Lurline Smith and two grandsons.
+							</p>
+
+							<p class="text-start text-secondary">
+								He was introduced to God's word and spiritual teachings at an
+								early age, Pastor Tony's first place of worship in God's house
+								was Hosley Temple of Tampa, Florida. He continued his thirst for
+								knowledge and understanding of God's word and spiritual teaching
+								at Hosley Temple C.M.E. until the summer of 1990, Pastor Tony
+								joined Allen Chapel A.M.E. Church Plant City, Florida, where his
+								wife, Fayeshawn, had been a long-standing member. As his
+								knowledge grew, he became very active in the church and served
+								as a member of the Trustee board, Steward board, Allen Chapel
+								mortgage committee, and Men of Allen spiritual group. In
+								addition to serving in various capacities of leadership
+								throughout the years, Pastor Tony was involved in a variety on
+								ministerial endeavors that prepared him to embrace lost souls
+								and minister to the whole individual regardless of challenges or
+								limitations
+							</p>
+						</div>
+
+						<h3>Professional Journey:</h3>
+						<div class="aboutParagraph">
+							<p class="text-start text-secondary">
+								Pastor Tony joined the Tampa Police Department in March of 1982
+								as a Police Officer. He experienced a very promising career in
+								the Police Department, retiring as a Police Corporal/Detective
+								in Jusly 2010. Also, he served as a youth mentor for Big
+								Brothers/Big Sisters during his time as a Police Detective.
+								Pastor Tony is currently employed with Hillsborough County
+								Public Schools, assigned as a school security Corporal. He
+								started the "Future of Tomorrow" mentoring group as Lithia
+								Springs Elementary, Cimino Elementary and Alafia Elementary
+								while assigned as a Community Service Officer.
+							</p>
+						</div>
+
+						<h3>Beginning of his spiritual calling and journey:</h3>
+						<div class="aboutParagraph">
+							<p class="text-start text-secondary">
+								During the beginning of 2016, the spirit of the Lord came upon
+								Tony and instructed him to start a church ministry, just as the
+								Apostle Paul was assigned to do by God. By faith and the trust
+								in God, Pastor Tony launched the Embrace Christian Church
+								ministry.
+							</p>
+
+							<p class="text-start text-secondary">
+								His ultimate desire is to see people fully embrace God's love
+								and to walk in victory and the power of our Lord while
+								experiencing the fullness of God's promises. Pastor Tony is
+								making a difference in the lives of people, members, and our
+								community. Both, Pastor Tony, and his Wife, Fayeshawn, are
+								following God's word and leading souls to Christ, they are
+								blessed by the Holy Spirity in which they are a blessing to
+								others.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- CHURCH PAGE -->
+			<div id="aboutChurch" class="pageHide pageBody">
+				<section class="card rounded d-flex flex-column mx-auto">
+					<img class="card-img-top"
+						src="https://images.unsplash.com/photo-1599073472048-578c99bbe801?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+						alt="church house"
+					/>
+					<div class="card-body px-5 py-4">
+						<h3>Embrace Christian Church Vision:</h3>
+						<div class="aboutParagraph">
+							<p class="text-start text-secondary">
+								It is our vision as a christian church minsitry to embrace the
+								community based on God's vision and His words which are written
+								in the book of life, which translates into the principles which
+								we live by from the word of God. We are seeking to reach as many
+								lost souls as possible based on our loving, kindness,
+								compassion, giving, forgiving so that we all can grow together
+								in one accord.
+							</p>
+
+							<p class="text-start text-secondary">
+								We are currently looking to establish a place of fellowship that
+								we can call our own. We currently have our fellowship service at
+								libraries and hotel conference rooms which at times we have to
+								follow their schedule ir order to reserve space. Due to the
+								Covid-19 pandemic, we are currently using the zoom platform for
+								our fellowship service.
+							</p>
+
+							<p class="text-start text-secondary">
+								We are also seeking to establish a christian learning
+								environment for our school age students in the near future,
+								which is much needed in today's society. Lets not just talk
+								about it, let's be about it based on the plans set forth by God.
+								Just as God had given Nehemiah the vision to rebuild the broken
+								walls in Jerusalem (Nehemiah 2:17, 18 NIV), we too here at
+								Embrace Christian Church seek to rebuild a broken world one soul
+								at a time. God has placed on our hearts to help the homeless.
+								Therefore, we are looking to provide food, clothing, shelter and
+								basic needs for the homeless. We are currently helping charity
+								organizations (see charity list) that help those in need.
+							</p>
+						</div>
+
+						<h3>Embrace Christian Church Mission:</h3>
+						<div class="aboutParagraph">
+							<p class="text-start text-secondary">
+								First and foremost, we are all God's people. It is our mission
+								here at Embrace Christian Church to teach God's people based on
+								the written and spoken words of the bible. It is also our
+								mission to encourage everyone to comprehensively teach the word
+								of God. Our beliefs are in the power of God through the Father,
+								Son and Holy Spirit. Our mission is to help those who stand in
+								the needs of physical, emotional and spiritual needs. God has
+								placed his people on the earth for their purpose in life so that
+								God may be glorified. Therefore, it is our mission to assist all
+								God's people to accomplish their purpose in life by the word of
+								God. Join us in accomplishing our mission statement that God has
+								placed on our hearts. We are a bible based ministry doing the
+								will of God.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 
-		<!-- <section id="aboutPastor">
-			<img src="./images/pastor-tony.jpg" alt="pastor tony and wife" />
-			<h3>
-				Biography Duwayne "Tony" Smith, Pastor of Embrace Christian Church
-				<span
-					><img
-						class="downArrow about--downArrow"
-						src="./images/down-arrow-svgrepo-com.svg"
-						alt="button"
-				/></span>
-			</h3>
-			<div class="aboutParagraph about--hidden">
-				<p>
-					Duwayne "Tony" Smith entered this world on August 16, 1959, to the
-					union of the late Tucker Smith and Bertha Smith. From his parent's
-					union, Pastor Tony is the second child of five, three brothers and one
-					sister. Tony attended public schools in Hillsborough County, graduated
-					June of 1977 from Brandon High School, Brandon, Florida. He continued
-					his educational pursuit at Hillsborugh Community College (HCC) where
-					he was a member of the baseball team from 1977 to 1979 and earned his
-					Associate of Arts degree. Pastor Tony continued the studying of God's
-					word at Liberty University, Tabernacle Bible College and Seminary
-					wheree he earned his Bachelor of Arts degree in the Religious Art.
-					Currently, he is working on earning his Master's degree and will not
-					stop there!
-				</p>
-
-				<p>
-					During the summer of July 1987, Pastor Tony met his soul mate,
-					Fayeshawn Devon Davis. On November 11, 1989, they were joined in holy
-					matrimony. The proud parents of three beautiful children: Lauren Dione
-					Smith White, Devin Anthony Smith, Destiny Alexis Lurline Smith and two
-					grandsons.
-				</p>
-
-				<p>
-					He was introduced to God's word and spiritual teachings at an early
-					age, Pastor Tony's first place of worship in God's house was Hosley
-					Temple of Tampa, Florida. He continued his thirst for knowledge and
-					understanding of God's word and spiritual teaching at Hosley Temple
-					C.M.E. until the summer of 1990, Pastor Tony joined Allen Chapel
-					A.M.E. Church Plant City, Florida, where his wife, Fayeshawn, had been
-					a long-standing member. As his knowledge grew, he became very active
-					in the church and served as a member of the Trustee board, Steward
-					board, Allen Chapel mortgage committee, and Men of Allen spiritual
-					group. In addition to serving in various capacities of leadership
-					throughout the years, Pastor Tony was involved in a variety on
-					ministerial endeavors that prepared him to embrace lost souls and
-					minister to the whole individual regardless of challenges or
-					limitations
-				</p>
-			</div>
-
-			<h3>Professional Journey:</h3>
-			<p class="aboutParagraph">
-				Pastor Tony joined the Tampa Police Department in March of 1982 as a
-				Police Officer. He experienced a very promising career in the Police
-				Department, retiring as a Police Corporal/Detective in Jusly 2010. Also,
-				he served as a youth mentor for Big Brothers/Big Sisters during his time
-				as a Police Detective. Pastor Tony is currently employed with
-				Hillsborough County Public Schools, assigned as a school security
-				Corporal. He started the "Future of Tomorrow" mentoring group as Lithia
-				Springs Elementary, Cimino Elementary and Alafia Elementary while
-				assigned as a Community Service Officer.
-			</p>
-
-			<h3>Beginning of his spiritual calling and journey:</h3>
-			<p class="aboutParagraph">
-				During the beginning of 2016, the spirit of the Lord came upon Tony and
-				instructed him to start a church ministry, just as the Apostle Paul was
-				assigned to do by God. By faith and the trust in God, Pastor Tony
-				launched the Embrace Christian Church ministry.
-			</p>
-
-			<p class="aboutParagraph">
-				His ultimate desire is to see people fully embrace God's love and to
-				walk in victory and the power of our Lord while experiencing the
-				fullness of God's promises. Pastor Tony is making a difference in the
-				lives of people, members, and our community. Both, Pastor Tony, and his
-				Wife, Fayeshawn, are following God's word and leading souls to Christ,
-				they are blessed by the Holy Spirity in which they are a blessing to
-				others.
-			</p>
-		</section>
-
-		<section id="aboutChurch" class="pageHide">
-			<h3>Embrace Christian Church Vision:</h3>
-			<p>
-				It is our vision as a christian church minsitry to embrace the community
-				based on God's vision and His words which are written in the book of
-				life, which translates into the principles which we live by from the
-				word of God. We are seeking to reach as many lost souls as possible
-				based on our loving, kindness, compassion, giving, forgiving so that we
-				all can grow together in one accord.
-			</p>
-
-			<p>
-				We are currently looking to establish a place of fellowship that we can
-				call our own. We currently have our fellowship service at libraries and
-				hotel conference rooms which at times we have to follow their schedule
-				ir order to reserve space. Due to the Covid-19 pandemic, we are
-				currently using the zoom platform for our fellowship service.
-			</p>
-
-			<p>
-				We are also seeking to establish a christian learning environment for
-				our school age students in the near future, which is much needed in
-				today's society. Lets not just talk about it, let's be about it based on
-				the plans set forth by God. Just as God had given Nehemiah the vision to
-				rebuild the broken walls in Jerusalem (Nehemiah 2:17, 18 NIV), we too
-				here at Embrace Christian Church seek to rebuild a broken world one soul
-				at a time. God has placed on our hearts to help the homeless. Therefore,
-				we are looking to provide food, clothing, shelter and basic needs for
-				the homeless. We are currently helping charity organizations (see
-				charity list) that help those in need.
-			</p>
-
-			<h3>Embrace Christian Church Mission:</h3>
-			<p>
-				First and foremost, we are all God's people. It is our mission here at
-				Embrace Christian Church to teach God's people based on the written and
-				spoken words of the bible. It is also our mission to encourage everyone
-				to comprehensively teach the word of God. Our beliefs are in the power
-				of God through the Father, Son and Holy Spirit. Our mission is to help
-				those who stand in the needs of physical, emotional and spiritual needs.
-				God has placed his people on the earth for their purpose in life so that
-				God may be glorified. Therefore, it is our mission to assist all God's
-				people to accomplish their purpose in life by the word of God. Join us
-				in accomplishing our mission statement that God has placed on our
-				hearts. We are a bible based ministry doing the will of God.
-			</p>
-		</section> -->
-
-		<section id="aboutPastor" class="rounded py-4 px-4 d-flex flex-column">
-			<div class="py-3 mb-3">
-				<img
-					class=""
-					src="./images/pastor-tony.jpg"
-					alt="pastor tony and wife"
-				/>
-			</div>
-			<h3>
-				Biography Duwayne "Tony" Smith, Pastor of Embrace Christian Church
-			</h3>
-			<div class="aboutParagraph">
-				<p class="text-start">
-					Duwayne "Tony" Smith entered this world on August 16, 1959, to the
-					union of the late Tucker Smith and Bertha Smith. From his parent's
-					union, Pastor Tony is the second child of five, three brothers and one
-					sister. Tony attended public schools in Hillsborough County, graduated
-					June of 1977 from Brandon High School, Brandon, Florida. He continued
-					his educational pursuit at Hillsborugh Community College (HCC) where
-					he was a member of the baseball team from 1977 to 1979 and earned his
-					Associate of Arts degree. Pastor Tony continued the studying of God's
-					word at Liberty University, Tabernacle Bible College and Seminary
-					wheree he earned his Bachelor of Arts degree in the Religious Art.
-					Currently, he is working on earning his Master's degree and will not
-					stop there!
-				</p>
-
-				<p>
-					During the summer of July 1987, Pastor Tony met his soul mate,
-					Fayeshawn Devon Davis. On November 11, 1989, they were joined in holy
-					matrimony. The proud parents of three beautiful children: Lauren Dione
-					Smith White, Devin Anthony Smith, Destiny Alexis Lurline Smith and two
-					grandsons.
-				</p>
-
-				<p>
-					He was introduced to God's word and spiritual teachings at an early
-					age, Pastor Tony's first place of worship in God's house was Hosley
-					Temple of Tampa, Florida. He continued his thirst for knowledge and
-					understanding of God's word and spiritual teaching at Hosley Temple
-					C.M.E. until the summer of 1990, Pastor Tony joined Allen Chapel
-					A.M.E. Church Plant City, Florida, where his wife, Fayeshawn, had been
-					a long-standing member. As his knowledge grew, he became very active
-					in the church and served as a member of the Trustee board, Steward
-					board, Allen Chapel mortgage committee, and Men of Allen spiritual
-					group. In addition to serving in various capacities of leadership
-					throughout the years, Pastor Tony was involved in a variety on
-					ministerial endeavors that prepared him to embrace lost souls and
-					minister to the whole individual regardless of challenges or
-					limitations
-				</p>
-			</div>
-
-			<h3>Professional Journey:</h3>
-			<div class="aboutParagraph">
-				<p>
-					Pastor Tony joined the Tampa Police Department in March of 1982 as a
-					Police Officer. He experienced a very promising career in the Police
-					Department, retiring as a Police Corporal/Detective in Jusly 2010.
-					Also, he served as a youth mentor for Big Brothers/Big Sisters during
-					his time as a Police Detective. Pastor Tony is currently employed with
-					Hillsborough County Public Schools, assigned as a school security
-					Corporal. He started the "Future of Tomorrow" mentoring group as
-					Lithia Springs Elementary, Cimino Elementary and Alafia Elementary
-					while assigned as a Community Service Officer.
-				</p>
-			</div>
-
-			<h3>Beginning of his spiritual calling and journey:</h3>
-			<div class="aboutParagraph">
-				<p>
-					During the beginning of 2016, the spirit of the Lord came upon Tony
-					and instructed him to start a church ministry, just as the Apostle
-					Paul was assigned to do by God. By faith and the trust in God, Pastor
-					Tony launched the Embrace Christian Church ministry.
-				</p>
-
-				<p>
-					His ultimate desire is to see people fully embrace God's love and to
-					walk in victory and the power of our Lord while experiencing the
-					fullness of God's promises. Pastor Tony is making a difference in the
-					lives of people, members, and our community. Both, Pastor Tony, and
-					his Wife, Fayeshawn, are following God's word and leading souls to
-					Christ, they are blessed by the Holy Spirity in which they are a
-					blessing to others.
-				</p>
-			</div>
-		</section>
-
-		<section id="aboutChurch" class="pageHide">
-			<h3>Embrace Christian Church Vision:</h3>
-			<p>
-				It is our vision as a christian church minsitry to embrace the community
-				based on God's vision and His words which are written in the book of
-				life, which translates into the principles which we live by from the
-				word of God. We are seeking to reach as many lost souls as possible
-				based on our loving, kindness, compassion, giving, forgiving so that we
-				all can grow together in one accord.
-			</p>
-
-			<p>
-				We are currently looking to establish a place of fellowship that we can
-				call our own. We currently have our fellowship service at libraries and
-				hotel conference rooms which at times we have to follow their schedule
-				ir order to reserve space. Due to the Covid-19 pandemic, we are
-				currently using the zoom platform for our fellowship service.
-			</p>
-
-			<p>
-				We are also seeking to establish a christian learning environment for
-				our school age students in the near future, which is much needed in
-				today's society. Lets not just talk about it, let's be about it based on
-				the plans set forth by God. Just as God had given Nehemiah the vision to
-				rebuild the broken walls in Jerusalem (Nehemiah 2:17, 18 NIV), we too
-				here at Embrace Christian Church seek to rebuild a broken world one soul
-				at a time. God has placed on our hearts to help the homeless. Therefore,
-				we are looking to provide food, clothing, shelter and basic needs for
-				the homeless. We are currently helping charity organizations (see
-				charity list) that help those in need.
-			</p>
-
-			<h3>Embrace Christian Church Mission:</h3>
-			<p>
-				First and foremost, we are all God's people. It is our mission here at
-				Embrace Christian Church to teach God's people based on the written and
-				spoken words of the bible. It is also our mission to encourage everyone
-				to comprehensively teach the word of God. Our beliefs are in the power
-				of God through the Father, Son and Holy Spirit. Our mission is to help
-				those who stand in the needs of physical, emotional and spiritual needs.
-				God has placed his people on the earth for their purpose in life so that
-				God may be glorified. Therefore, it is our mission to assist all God's
-				people to accomplish their purpose in life by the word of God. Join us
-				in accomplishing our mission statement that God has placed on our
-				hearts. We are a bible based ministry doing the will of God.
-			</p>
-		</section>
-
 		<!-- JAVASCRIPT -->
+		<script src="./about.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		></script>
-		<!-- MDB -->
-		<script
-			type="text/javascript"
-			src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
-		></script>
-		<script src="./about.js"></script>
 	</body>
 </html>

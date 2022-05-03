@@ -13,6 +13,10 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/7520723878.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Embrace Christian Church</title>
 	</head>
 	<body>
@@ -59,6 +63,11 @@
 				<div class="offcanvas-body">
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href=""
+								><i class="fa-solid fa-user"></i
+							></a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="./index.html"
 								>Home</a
 							>
@@ -89,120 +98,73 @@
 		</nav>
 
 		<!-- HERO BANNER -->
-		<div class="card bg-dark text-white text-center">
-			<img
-				src="./images/praise1.jpg"
-				alt="praise and worship"
-				class="card-img"
-			/>
-			<div class="card-img-overlay">
-				<h1 class="card-title">Embrace Christian Church</h1>
-				<p class="card-text">Where our home is your home!</p>
-				<div class="headerButton">
-					<button class="btn btn--cta">Join Our Home</button>
-				</div>
-			</div>
-		</div>
-
-		<!-- SECTION 1 -->
-		<section class="py-5 d-flex flex-column text-center" id="section1">
-			<h2>Message from Pastor Tony</h2>
-			<div>
-				<video autoplay loop muted id="video">
-					<source src="./video/Pexels Videos 2268807.mp4" type="video/mp4" />
-				</video>
-			</div>
-			<div></div>
-		</section>
-
-		<!-- SECTION 2 CARDS -->
-		<!-- <div class="row"> -->
-		<div class="d-flex justify-content-around flex-column flex-md-row">
-			<div class="card border-secondary text-center pt-4 m-4">
+		<div class="indexBody">
+			<div class="card bg-dark text-white text-center">
 				<img
-					src="./images/church-svgrepo-com.svg"
-					alt="church"
-					class="card-img-top benefitsImg mx-auto"
+					src="./images/praise1.jpg"
+					alt="praise and worship"
+					class="card-img"
 				/>
-				<div class="card-body">
-					<h3>Great Community</h3>
-					<p class="card-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-						numquam tenetur, quos, reiciendis iste exercitationem qui nulla
-						ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
-						dolorum earum odio ipsa modi.
-					</p>
+				<div
+					class="card-img-overlay mt-5 d-flex align-items-center flex-column"
+				>
+					<h1 class="card-title text-uppercase">Embrace Christian Church</h1>
+					<p class="card-text">Where our home is your home!</p>
+					<div class="headerButton">
+						<button class="btn btn--cta">Join Our Home</button>
+					</div>
 				</div>
 			</div>
 
-			<div class="card border-secondary text-center pt-4 m-4">
-				<img
-					src="./images/charity-svgrepo-com.svg"
-					alt="charities"
-					class="card-img-top benefitsImg mx-auto"
-				/>
-				<div class="card-body">
-					<h3>Benefiting Charities</h3>
-					<p class="card-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-						numquam tenetur, quos, reiciendis iste exercitationem qui nulla
-						ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
-						dolorum earum odio ipsa modi.
-					</p>
+			<!-- SECTION 1 -->
+			<section class="py-5 d-flex flex-column text-center" id="section1">
+				<h2>Message from Pastor Tony</h2>
+				<div>
+					<video autoplay loop muted id="video">
+						<source src="./video/Pexels Videos 2268807.mp4" type="video/mp4" />
+					</video>
 				</div>
-			</div>
-		</div>
+				<div></div>
+			</section>
 
-		<!-- <div class="col-6">
-				
-			</div> -->
-		<!-- </div> -->
-
-		<!-- <section id="section2">
-			<h2 class="benefitsTitle">Why join ECC?</h2>
-			<div class="benefitsCards">
-				<div class="card landing--card hidden">
+			<!-- SECTION 2 CARDS -->
+			<!-- <div class="row"> -->
+			<div class="d-flex justify-content-around flex-column flex-md-row">
+				<div class="card border-secondary text-center pt-4 m-4">
 					<img
-						class="benefitsImg filter-green"
 						src="./images/church-svgrepo-com.svg"
-						alt="church image"
+						alt="church"
+						class="card-img-top benefitsImg mx-auto"
 					/>
-					<h3>Great Community</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-						numquam tenetur, quos, reiciendis iste exercitationem qui nulla
-						ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
-						dolorum earum odio ipsa modi.
-					</p>
-				</div> -->
-		<!-- <div class="card landing--card hidden">
+					<div class="card-body">
+						<h3>Great Community</h3>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+							numquam tenetur, quos, reiciendis iste exercitationem qui nulla
+							ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
+							dolorum earum odio ipsa modi.
+						</p>
+					</div>
+				</div>
+
+				<div class="card border-secondary text-center pt-4 m-4">
 					<img
-						class="benefitsImg filter-blue"
-						src="./images/video-call-svgrepo-com.svg"
-						alt="video call"
-					/>
-					<h3>Worship from home</h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-						numquam tenetur, quos, reiciendis iste exercitationem qui nulla
-						ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
-						dolorum earum odio ipsa modi.
-					</p>
-				</div> -->
-		<!-- <div class="card landing--card hidden">
-					<img
-						class="benefitsImg filter-pink"
 						src="./images/charity-svgrepo-com.svg"
-						alt="charity"
+						alt="charities"
+						class="card-img-top benefitsImg mx-auto"
 					/>
-					<h3>Benefiting charities</h3>
-					<p>Your giving benefits charities.</p>
+					<div class="card-body">
+						<h3>Benefiting Charities</h3>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+							numquam tenetur, quos, reiciendis iste exercitationem qui nulla
+							ipsam beatae commodi labore mollitia doloribus? Aliquid voluptatem
+							dolorum earum odio ipsa modi.
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="otherButton">
-				<button class="btn btn--home btn--card-bottom">Join Our Home</button>
-			</div>
-		</section> -->
+		</div>
 
 		<!-- JAVASCRIPT -->
 		<script
