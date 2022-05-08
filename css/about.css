@@ -1,9 +1,9 @@
 /* ******************************************************* */
 /********* ABOUT PAGE **************/
 
-body {
+/* body {
 	background-color: #acb668;
-}
+} */
 
 .pageBody {
 	animation-name: pageSlideUp;
@@ -70,7 +70,7 @@ body {
 
 #aboutPastor,
 #aboutChurch {
-	margin: 10px 20px;
+	margin: 10px 80px;
 }
 
 /* SLIDE IN ANIMATION */
@@ -276,4 +276,12 @@ body {
   }
   .bar-outer.right {
 	transition-delay: 0;
+  }
+
+  /* BUTTON */
+  .button-bg {
+	  background-color: white;
+	  padding:8px;
+	  border-radius: 50px;
+	  border: 1px solid black;
   }

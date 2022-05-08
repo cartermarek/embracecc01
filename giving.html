@@ -20,114 +20,222 @@
 	</head>
 	<body>
 		<!-- NAVBAR -->
-
-		<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-			<a class="navbar-brand" href="./index.html"
-				><img
-					id="logo"
-					src="./images/ecc-only3.svg"
-					width="100"
-					height="50"
-					alt="ECC logo"
-			/></a>
-			<h6 class="d-sm-none d-md-block">Embrace Christian Church</h6>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-bs-toggle="offcanvas"
-				data-bs-target="#offcanvasNavbar"
-				aria-controls="offcanvasNavbar"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div
-				class="offcanvas offcanvas-end"
-				tabindex="-1"
-				id="offcanvasNavbar"
-				aria-labelledby="offcanvasNavbarLabel"
-			>
-				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-						Embrace Christian Church
-					</h5>
-					<button
-						type="button"
-						class="btn-close text-reset"
-						data-bs-dismiss="offcanvas"
-						aria-label="Close"
-					></button>
-				</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="./index.html"
-								>Home</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="./about.html"
-								>About</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="./events.html"
-								>Events</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="./contact.html"
-								>Contact</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="./giving.html"
-								>Giving</a
-							>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-
-		<div class="indexBody">
-			<!-- GIVING MAIN -->
-
-			<main
-				id="givingContainer"
-				class="bg-light d-flex flex-column text-center w-75 mx-auto rounded"
-			>
-				<h2 class="my-3">Embrace Christian Church Charity List</h2>
-				<ul id="charityList" class="mx-auto py-4">
-					<li>Feeding America Tampa Bay</li>
-					<li>Alzhemer's Association</li>
-					<li>Sickle Cell Association</li>
-					<li>ECHO of Brandon</li>
-					<li>The Foundation South Florida</li>
-					<li>Baptist Hospital</li>
-					<li>The Spring of Tampa Bay</li>
-					<li>Rahab's Daughters</li>
-					<li>Fight Against Human Trafficking</li>
-					<li>United Negro College Fund</li>
-					<li>St. Jude Children</li>
-					<li>Juvenile Diabetes</li>
-				</ul>
-				<h3 class="mb-3">Many more coming soon....</h3>
-				<div class="donateSection border-top">
-					<h4>Your giving helps support our charity partners</h4>
-					<div>
-						<div>CashApp</div>
-						<div>Paypal</div>
-						<div>Giveify</div>
+		<div class="bg-grad">
+			<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+				<a class="navbar-brand" href="./index.html"
+					><img
+						id="logo"
+						src="./images/ecc-only3.svg"
+						width="100"
+						height="50"
+						alt="ECC logo"
+				/></a>
+				<h6 class="d-sm-none d-md-block">Embrace Christian Church</h6>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+							Embrace Christian Church
+						</h5>
+						<button
+							type="button"
+							class="btn-close text-reset"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="./index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="./about.html"
+									>About</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="./events.html"
+									>Events</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="./contact.html"
+									>Contact</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="./giving.html"
+									>Giving</a
+								>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</main>
-		</div>
+			</nav>
 
+			<div class="indexBody">
+				<!-- GIVING MAIN -->
+
+				<main
+					id="givingContainer"
+					class="bg-light d-flex flex-column text-center w-75 mx-auto mt-5 rounded"
+				>
+					<h2 class="my-3">Embrace Christian Church Charity List</h2>
+
+					<!-- CAROUSEL -->
+					<div
+						id="carouselExampleIndicators"
+						class="carousel slide"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									src="https://www.feedingamerica.org/themes/custom/ts_feeding_america/images/svgs/logo-2020.svg"
+									class="d-block w-100"
+									alt="Feeding America Tampa Bay"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="https://www.alz.org/media/Images/Logos/logo.png?ext=.png"
+									class="d-block w-100"
+									alt="Alzheimer's Association"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="https://www.sicklecelldisease.org/wp-content/uploads/2019/01/Web_SCDAA_Circle_White_150x150.png"
+									class="d-block w-100"
+									alt="Sickle Cell Association"
+								/>
+							</div>
+							<!-- <div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div>
+						<div class="carousel-item">
+							<img src="..." class="d-block w-100" alt="..." />
+						</div> -->
+						</div>
+						<button
+							style="filter: invert(1)"
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							style="filter: invert(1)"
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+					<ul id="charityList" class="mx-auto py-4">
+						<li>Feeding America Tampa Bay</li>
+						<li>Alzhemer's Association</li>
+						<li>Sickle Cell Association</li>
+						<li>ECHO of Brandon</li>
+						<li>The Foundation South Florida</li>
+						<li>Baptist Hospital</li>
+						<li>The Spring of Tampa Bay</li>
+						<li>Rahab's Daughters</li>
+						<li>Fight Against Human Trafficking</li>
+						<li>United Negro College Fund</li>
+						<li>St. Jude Children</li>
+						<li>Juvenile Diabetes</li>
+					</ul>
+
+					<h3 class="mb-3">Many more coming soon....</h3>
+					<div class="donateSection border-top">
+						<h4>Your giving helps support our charity partners</h4>
+						<div>
+							<div>CashApp</div>
+							<div>Paypal</div>
+							<div>Giveify</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
 		<!-- JAVASCRIPT -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
