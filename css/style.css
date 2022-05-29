@@ -15,9 +15,10 @@
 .bg-grad {
 	background: linear-gradient(
 		to bottom right,
-		rgba(0, 0, 0, 0.75) 0%,
-		#acb668 10%,
-		#efefef 90%
+		rgb(0, 0, 0, 0.75) 0%,
+		rgb(172, 182, 104) 7%,
+		rgb(172, 182, 104) 45%,
+		rgba(255, 142, 71, 0.75) 95%
 	);
 }
 
@@ -200,6 +201,10 @@ a:active {
 	margin-bottom: 24px;
 }
 
+.orange-text {
+	color: #ff8e47;
+}
+
 /***** HEADER BUTTONS ***********************************/
 .headerButton {
 	display: flex;
@@ -223,9 +228,15 @@ a:active {
 	transform: scale(1.2) translateY(-6px);
 }
 .btn--cta {
-	background-color: #a42cd6;
+	background-color: #ff8e47;
+	color: #fff;
 	animation-name: slideFromLeft;
 	animation-duration: 3s;
+}
+
+.btn--cta:hover {
+	background-color: #ffb485;
+	color: #fff;
 }
 
 .btn--giving {
@@ -254,11 +265,18 @@ a:active {
 	display: flex;
 	justify-content: center;
 	background-color: #acb668;
-	background: linear-gradient(
+	/* background: linear-gradient(
 		to bottom right,
 		rgba(0, 0, 0, 0.75) 0%,
 		#acb668 10%,
 		#efefef 90%
+	); */
+	background: linear-gradient(
+		to bottom right,
+		rgba(0, 0, 0, 0.75) 0%,
+		rgb(172, 182, 104) 3%,
+		rgb(172, 182, 104) 65%,
+		rgba(255, 142, 71, 0.75) 95%
 	);
 }
 
@@ -293,6 +311,8 @@ a:active {
 	width: 80px;
 	height: 80px;
 	margin-bottom: 16px;
+	filter: invert(31%) sepia(19%) saturate(3747%) hue-rotate(184deg)
+		brightness(96%) contrast(87%);
 }
 
 /* CARD */
@@ -333,6 +353,11 @@ a:active {
 	margin-bottom: 16px;
 }
 
+.card-body__bg-color {
+	background-color: #ececec;
+	border-top: 1px solid #000;
+}
+
 /**********************************************************/
 /************* EVENTS PAGE ******************************/
 
@@ -367,8 +392,8 @@ section {
 }
 
 .card-shadow {
-	-webkit-box-shadow: 10px 10px 5px 5px #acb668;
-	box-shadow: 10px 10px 5px 5px #acb668;
+	-webkit-box-shadow: 10px 10px 5px 5px #000;
+	box-shadow: 10px 10px 15px 5px #000;
 }
 
 /* *************************************************** */
@@ -469,6 +494,23 @@ section {
 		height: 100%;
 		position: absolute;
 		z-index: -5;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.h1-hero {
+		font-size: 1.9rem;
+	}
+	.h2-hero,
+	.h3-hero {
+		font-size: 1.5rem;
+	}
+	.hero-text {
+		font-size: 1rem;
+	}
+	.benefitsImg {
+		width: 65px;
+		height: 65px;
 	}
 }
 

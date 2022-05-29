@@ -17,20 +17,50 @@
 }
 
 .activeLink {
-	background-color: #000;
+	background-color: #ff8e47;
 	color: #fff;
+	border: 2px solid #fff;
 	transform: scale(1.2)
+}
+
+.activeLink:hover {
+	background-color: #ff8d47;
+	opacity: .5;
+	color: #fff;
+}
+
+.notActiveLink {
+	background-color: #2364aa;
+	opacity: .5;
+	color: #fff;
+	border: 2px solid #000;
+
+}
+
+.notActiveLink:hover {
+	color: #fff;
+	opacity: 1;
 }
 
 /***************** PASTOR SECTION */
 #aboutPastor {
-	background-color: #ececec;
+	/* background-color: #ececec; */
 	text-align: center;
 }
 
 #aboutPastor > img {
 	width: 250px;
 	margin-bottom: 20px;
+}
+
+.about-header {
+	background-color: #000;
+	color:#fff;
+	width: fit-content;
+	margin: 0 auto;
+	padding: 4px 12px;
+	margin-bottom: 12px;
+	border-radius: 6px;
 }
 
 #aboutPastor > h3,
@@ -64,7 +94,7 @@
 
 /***************** CHURCH SECTION */
 #aboutChurch {
-	background-color: #ececec;
+	/* background-color: #ececec; */
 	text-align: center;
 }
 
