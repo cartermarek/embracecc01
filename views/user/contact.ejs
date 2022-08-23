@@ -1,0 +1,55 @@
+<%- include('../includes/head.ejs') %>
+	</head>
+	<body>
+		
+		<%- include('../includes/nav.ejs') %>
+
+			
+
+			<div class="indexBody bg-normal mx-4">
+				<!-- FORM -->
+				<div class="d-flex flex-column align-items-center py-5">
+					<div class="bg-black text-white w-50 rounded-top text-center video-shadow">
+						<h1>Contact Us</h1>
+					</div>
+					<div class="col-11 col-sm-8 col-md-6 video-shadow">
+						<form class="border border-dark shadow-lg rounded-bottom p-5 bg-light">
+							<div class="form-group mb-3">
+								<label for="email">Email address</label>
+								<input
+									type="email"
+									class="form-control shadow-sm"
+									id="inputEmail"
+									aria-describedby="emailHelp"
+									placeholder="Enter Email"
+								/>
+							</div>
+							<div class="form-group mb-3">
+								<label for="fullName">Name</label>
+								<input
+									type="text"
+									class="form-control shadow-sm"
+									id="inputName"
+									placeholder="Enter Name"
+								/>
+							</div>
+							<div class="form-group mb-3">
+								<label for="questions">Questions</label>
+								<textarea
+									class="form-control shadow-sm"
+									id="questions"
+									rows="6"
+								></textarea>
+							</div>
+							<div class="d-flex justify-content-center">
+								<button type="submit" class="btn btn--cta shadow-lg">
+									Send Message
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <%- include('../includes/end.ejs') %>

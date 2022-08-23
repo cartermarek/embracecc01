@@ -1,0 +1,47 @@
+<%- include('../includes/head.ejs') %>
+	</head>
+	<body>
+		
+		<%- include('../includes/nav.ejs') %>
+
+		<div class="indexBody mx-4 bg-normal">
+			<!-- EVENTS CONTAINER -->
+                            
+            <div class="container-fluid bg-dark text-white py-2">
+                <div class="row flex-column align-items-center">
+                    <h1 class="col-6 text-center"><%= pageTitle %></h1>
+
+                </div>
+            </div>
+			<main class="eventsContainer">
+
+						<!-- WORD OF THE DAY -->
+						<section id="wordOfDay" class="col-6 bg-light video-shadow">
+							<h2>Word of the Day</h2>
+							<h3>Psalm 37:23-24</h3>
+							<p>
+								If the LORD delights in a man’s ways, He makes his steps firm;
+								though he stumble, he will not fall, for the LORD upholds him with
+								His hand.
+							</p>
+							<div class="edit__wordOfDay">
+								<a href="/admin/edit-wordOfDay"></a>
+							</div>
+						</section>
+
+						<!-- CALENDAR -->
+						<section id="calendar" class="col-8">
+							<iframe
+								src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTz=1&showTabs=0&showNav=1&src=Y2FydGVybWFyZWtAZ21haWwuY29t&src=OGgzOTc3MWw0MXI5MWdsbHRpdmd0dXB2NzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZjlmZGNoZWo0cDJxcnZjYXVhcDk3MDg4cXZhNzQ2amxAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%23E67C73&color=%23E67C73"
+								style="border: solid 1px #777"
+								width="700"
+								height="600"
+								frameborder="0"
+								scrolling="no"
+							></iframe>
+						</section>
+
+			</main>
+		</div>
+
+        <%- include('../includes/end.ejs') %>

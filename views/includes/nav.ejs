@@ -1,0 +1,185 @@
+<!-- NAVBAR -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+	<a class="navbar-brand" href="./index.html"
+		><img
+			id="logo"
+			src="../../images/ecc-only3.svg"
+			width="100"
+			height="50"
+			alt="ECC logo"
+	/></a>
+	<h6 class="d-none d-md-block">Embrace Christian Church</h6>
+	<button
+		class="navbar-toggler"
+		type="button"
+		data-bs-toggle="offcanvas"
+		data-bs-target="#offcanvasNavbar"
+		aria-controls="offcanvasNavbar"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	>
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div
+		class="offcanvas offcanvas-end"
+		tabindex="-1"
+		id="offcanvasNavbar"
+		aria-labelledby="offcanvasNavbarLabel"
+	>
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+				Embrace Christian Church
+			</h5>
+			<button
+				type="button"
+				class="btn-close text-reset"
+				data-bs-dismiss="offcanvas"
+				aria-label="Close"
+			></button>
+		</div>
+		<div class="offcanvas-body">
+			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<!-- admin button -->
+				<!-- <li class="nav-item px-3">
+					<button
+						class="border-0 bg-white"
+						type="button"
+						data-bs-toggle="modal"
+						data-bs-target="#adminModal"
+					>
+						<i class="fa-solid fa-user mt-2"></i>
+					</button>
+				</li> -->
+				<li class="nav-item">
+					<a
+						class="nav-link <%= path === '/' ? 'active' : '' %>"
+						aria-current="page"
+						href="/"
+						>Home</a
+					>
+				</li>
+				<li class="nav-item dropdown">
+					<a
+						class="nav-link dropdown-toggle"
+						href="#"
+						id="navbarAboutNav"
+						role="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+						>About</a
+					>
+					<ul class="dropdown-menu" aria-labelledby="navbarAboutNav">
+						<li>
+							<a href="/pastor" class="dropdown-item" style="color: #000"
+								>Pastor Tony</a
+							>
+						</li>
+						<li>
+							<a href="/church-vision" class="dropdown-item" style="color: #000"
+								>Church Vision</a
+							>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a
+						class="nav-link dropdown-toggle"
+						href="#"
+						id="navbarEventsNav"
+						role="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+						>Events</a
+					>
+					<ul class="dropdown-menu" aria-labelledby="navbarEventsNav">
+						<li>
+							<a href="/event-calendar" class="dropdown-item" style="color: #000"
+								>Event Calendar</a
+							>
+						</li>
+						<li>
+							<a href="/event-photos" class="dropdown-item" style="color: #000"
+								>Event Photos</a
+							>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a
+						class="nav-link dropdown-toggle"
+						href="#"
+						id="navbarAdminEventsNav"
+						role="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+						>Admin Events</a
+					>
+					<ul class="dropdown-menu" aria-labelledby="navbarAdminEventsNav">
+						<li>
+							<a href="/admin/admin-event-calendar" class="dropdown-item" style="color: #000"
+								>Admin Event Calendar</a
+							>
+						</li>
+						<li>
+							<a href="/admin/admin-event-photos" class="dropdown-item" style="color: #000"
+								>Admin Event Photos</a
+							>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link <%= path === '/contact' ? 'active' : '' %>"
+						aria-current="page"
+						href="/contact"
+						>Contact</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link <%= path === '/giving' ? 'active' : '' %>"
+						aria-current="page"
+						href="/giving"
+						>Giving</a
+					>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- MODAL SIGN IN -->
+
+<!-- <div
+	class="modal fade"
+	id="adminModal"
+	tabindex="-1"
+	aria-labelledby="adminModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="adminModalLabel">Admin Sign-In</h5>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="modal-body">...</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+					Cancel
+				</button>
+				<button type="button" class="btn btn-primary">Sign-In</button>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<!-- END MODAL -->
+
+<!-- END NAVBAR -->

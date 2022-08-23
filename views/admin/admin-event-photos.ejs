@@ -1,0 +1,146 @@
+<%- include('../includes/head.ejs') %>
+	</head>
+	<body>
+		
+		<%- include('../includes/nav.ejs') %>
+
+		<div class="indexBody mx-4 bg-normal">
+
+            <!-- EVENT PHOTOS -->
+                            
+            <div class="container-fluid bg-dark text-white py-2">
+                <div class="row flex-column align-items-center">
+                    <h1 class="col-6 text-center"><%= pageTitle %></h1>     
+                        <% if (albums.length > 0) { %>	
+                        <!-- filter -->
+                        <div class="col-6 dropdown text-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Photo Filter
+                            </button>
+
+                            <ul class="dropdown-menu text-dark">
+                            
+                            <% for (let albumCat of albums) { %>
+                                <% for (var i = 0; i < albums.length; i++) { %>
+                                    <% for (var x = 1; x < albums.length; x++) { %>
+                                        <% if (albumCat !== albumCat) { %>
+                                <li><a class="text-dark" href="dropdown-item" href="#"><%= albumCat.category %></a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                <!-- <script>
+                                    albumsFeat = albums;
+                                    albumLength = albumCat.length;
+                                    albumList = [];
+
+                                    for (i = 0; i < albumLength; i++) {
+                                        if (albumLength == 0) {
+                                            albumList += 
+                                        }
+                                    }
+                                </script> -->
+
+                                <% } %>
+                                <% } %>
+                                <% } %>
+                            <% } %>	
+                        </ul>
+                    </div>
+                    <% } %>
+
+                        <!-- add photo -->
+                        <div>             
+                            <a class='btn btn-primary' href="/admin/add-album">Add Photo to Album</a>
+                        </div>
+                </div>
+            </div>
+            
+            <% if (albums.length > 0) { %>	
+                
+                <section id="eventPhotos" class="mt-3">
+                    <div class="d-flex">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <% for (let album of albums) { %> 
+                                <!-- PHOTO CARD -->
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    
+                                    <div class="card h-100">
+                                        <img class="img-thumbnail" src="<%= album.imageUrl %>" alt="<%= album.title %>">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><%= album.title %></h5>
+                                            <p class="card-text"><%= album.description %></p>
+                                            <div>
+                                                <a href="/admin/edit-photo/<%= album.id %>?edit=true" class="btn btn-primary mb-2 w-100">Edit</a>
+                                                <form action="/admin/delete-photo" method="POST">
+                                                    <input type="hidden" value="<%= album.id %>" name="albumId">
+                                                    <button class="btn btn-danger w-100" type="submit">Delete</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <% } %>	
+                            <% } else { %>	
+                                <h2>No Photos Added</h2>
+                            <% } %>
+                                <!-- END PHOTO CARD -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="eventPhotos" class="mt-3">
+                    <div class="d-flex">
+                        <div class="container-fluid">
+                            <div class="row">
+                                
+                                <!-- PHOTO CARD -->
+                                    <div class="col-12 col-sm-6 col-md-4" style="">
+                                        <div class="card">
+                                            <img class="card-img-top" src="\images\event-images\IMG_0121.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Church Photos</h5>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit aliquam quis fugiat necessitatibus beatae ex esse, cum nisi aliquid perferendis, nihil obcaecati sunt minus, saepe architecto? Recusandae, quaerat velit?</p>
+                                                <div>
+                                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="">Edit</button>
+                                                    <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="">Delete</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <!-- PHOTO CARD -->
+                                <div class="col-12 col-sm-6 col-md-4" style="">
+                                    <div class="card">
+                                        <img class="card-img-top" src="\images\event-images\IMG_0121.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Church Photos</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit aliquam quis fugiat necessitatibus beatae ex esse, cum nisi aliquid perferendis, nihil obcaecati sunt minus, saepe architecto? Recusandae, quaerat velit?</p>
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#title1">See Photos</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PHOTO CARD -->
+                                <div class="col-12 col-sm-6 col-md-4" style="">
+                                    <div class="card">
+                                        <img class="card-img-top" src="\images\event-images\IMG_0121.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Church Photos</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit aliquam quis fugiat necessitatibus beatae ex esse, cum nisi aliquid perferendis, nihil obcaecati sunt minus, saepe architecto? Recusandae, quaerat velit?</p>
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#title1">See Photos</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        </div>
+
+<%- include('../includes/end.ejs') %>

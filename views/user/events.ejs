@@ -1,0 +1,107 @@
+<%- include('../includes/head.ejs') %>
+	</head>
+	<body>
+		
+		<%- include('../includes/nav.ejs') %>
+
+		<div class="indexBody mx-4 bg-grad">
+			<!-- EVENTS CONTAINER -->
+			<main class="eventsContainer">
+				<!-- CALENDAR -->
+				<section id="'calendar">
+					<iframe
+						src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTz=1&showTabs=0&showNav=1&src=Y2FydGVybWFyZWtAZ21haWwuY29t&src=OGgzOTc3MWw0MXI5MWdsbHRpdmd0dXB2NzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZjlmZGNoZWo0cDJxcnZjYXVhcDk3MDg4cXZhNzQ2amxAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%23E67C73&color=%23E67C73"
+						style="border: solid 1px #777"
+						width="700"
+						height="600"
+						frameborder="0"
+						scrolling="no"
+					></iframe>
+				</section>
+
+				<!-- WORD OF THE DAY -->
+				<section id="wordOfDay" class="bg-light video-shadow">
+					<h2>Word of the Day</h2>
+					<h3>Psalm 37:23-24</h3>
+					<p>
+						If the LORD delights in a man’s ways, He makes his steps firm;
+						though he stumble, he will not fall, for the LORD upholds him with
+						His hand.
+					</p>
+				</section>
+
+				<!-- EVENT PHOTOS -->
+				
+				<h1>Event Photos</h1>
+				<section id="eventPhotos" class="bg-light video-shadow">
+					<div class="d-flex">
+						<!-- ALBUM CARD -->
+						<div>
+							<div class="card mx-2" style="width: 18rem;">
+								<img class="card-img-top" src="\images\event-images\IMG_0121.jpg" alt="Card image cap">
+								<div class="card-body">
+								  <h5 class="card-title">Church Photos</h5>
+								  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit aliquam quis fugiat necessitatibus beatae ex esse, cum nisi aliquid perferendis, nihil obcaecati sunt minus, saepe architecto? Recusandae, quaerat velit?</p>
+								  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#title1">See Photos</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="title1" tabindex="-1" aria-labelledby="photoAlbum" aria-hidden="true">
+							<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Church Photos</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<!-- photo1 -->
+									<div class="card" style="width: 100%;">
+										<img src="\images\event-images\IMG_0121.jpg" class="card-img-top" alt="baby picture">
+										<div class="card-body">
+										  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										</div>
+									</div>
+									<!-- photo2 -->
+									<div class="card" style="width: 100%;">
+										<img src="\images\event-images\IMG_0121.jpg" class="card-img-top" alt="baby picture">
+										<div class="card-body">
+										  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+								</div>
+							</div>
+							</div>
+						</div>
+
+						<!-- ALBUM CARD -->
+						<div>
+							<div class="card mx-2" style="width: 18rem;">
+								<img class="card-img-top" src="\images\event-images\IMG_0121.jpg" alt="Card image cap">
+								<div class="card-body">
+								  <h5 class="card-title">Church Photos</h5>
+								  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit aliquam quis fugiat necessitatibus beatae ex esse, cum nisi aliquid perferendis, nihil obcaecati sunt minus, saepe architecto? Recusandae, quaerat velit?</p>
+								  <a href="#" onclick="imageModal()" class="btn btn-primary">See Photos</a>
+								</div>
+							</div>
+						</div>
+						<div></div>
+					</div>
+
+					<!-- ALBUM MODAL -->
+				</section>
+			</main>
+		</div>
+
+		<script>
+			const imageModal = () => {
+				console.log('clicked')
+			}
+		</script>
+
+        <%- include('../includes/end.ejs') %>
