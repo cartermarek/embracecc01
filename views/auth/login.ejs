@@ -1,0 +1,22 @@
+<%- include('../includes/head.ejs') %>
+	</head>
+	<body>
+        <%- include('../includes/nav.ejs') %>   
+
+        <main>
+			<form class="login-form w-50 mx-auto border rounded-top mt-5 d-flex flex-column" action="/login" method="POST">
+                <h2 class="text-center bg-dark text-white p-3 rounded-top">Admin Login</h2>
+				<div class="form-control border-0">
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username" />
+				</div>
+				<div class="form-control border-0">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password"></input>
+				</div>
+				<button class="mx-2 mb-2" type="submit">Login</button>
+			</form>
+		</main>
+		
+
+<%- include('../includes/end.ejs') %>

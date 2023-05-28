@@ -9,6 +9,7 @@ const errorController = require("./controllers/error");
 const sequelize = require("./util/database");
 const Album = require("./models/album");
 const Photo = require("./models/photo");
+const User = require("./controllers/user");
 
 const app = express();
 
@@ -17,14 +18,24 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 
 // routes imports
-// const adminRoutes = require("./routes/admin");
-// const shopRoutes = require("./routes/user");
 const userRoutes = require("./routes/user");
 const adminRoutes = require("./routes/admin");
+const authRoutes = require("./routes/auth");
+const { nextTick } = require("process");
 
 // body parser
 app.use(bodyParser.urlencoded({ extended: false })); // does the body parsing automatically / text -- needs to be placed before routes
 app.use(express.static(path.join(__dirname, "public"))); // allows serving of files statically
+
+// dummy user
+// app.use((req, res, next) => {
+// 	User.findById("1234567890")
+// 		.then((user) => {
+// 			req.user = user;
+// 			next();
+// 		})
+// 		.catch((err) => console.log(err));
+// });
 
 // bootstrap
 app.use(
@@ -41,19 +52,18 @@ app.use(
 );
 
 // routes
-// app.use("/admin", adminRoutes);
-// app.use(shopRoutes);
 app.use(userRoutes);
 app.use("/admin", adminRoutes);
+app.use(authRoutes);
 
 app.use(errorController.get404);
 
 // one to many
 // Photo.belongsTo(Album, { constraints: true, onDelete: "CASCADE" });
 
-// models
+// models creates table
 sequelize
-	.sync({ force: true })
+	.sync()
 	.then((result) => {
 		// console.log(result);
 	})
@@ -61,7 +71,7 @@ sequelize
 		console.log(err);
 	});
 
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
-server.listen(3000);
-// app.listen(3000);
+// server.listen(3000);
+app.listen(3000);

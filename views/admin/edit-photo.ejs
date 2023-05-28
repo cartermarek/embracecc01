@@ -27,7 +27,10 @@
 						<textarea class="col-10" name="description" id="description" rows="5"><% if (editing) { %><%= album.description %><% } %></textarea>
 					</div>
 				</div>
-				<button type="submit" class="btn">Add Album</button>
+				<% if (editing) { %>
+					<input type="hidden" value="<%= album.id %>" name="albumId">
+					<% } %>
+					<button type="submit" class="btn"><% if (editing) { %>Update Album<% } else { %>Add Album<% } %></button>
 				<a href="/admin/admin-event-photos" class="btn bg-danger">Cancel</a>
 			</form>
 		</main>

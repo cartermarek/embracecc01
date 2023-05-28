@@ -41,16 +41,15 @@
 		<div class="offcanvas-body">
 			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 				<!-- admin button -->
-				<!-- <li class="nav-item px-3">
-					<button
-						class="border-0 bg-white"
-						type="button"
-						data-bs-toggle="modal"
-						data-bs-target="#adminModal"
+
+				<li class="nav-item px-3">
+					<a
+						class="nav-link <%= path === '/login' ? 'active' : '' %>"
+						href="/login"
+						>Admin Login</a
 					>
-						<i class="fa-solid fa-user mt-2"></i>
-					</button>
-				</li> -->
+				</li>
+
 				<li class="nav-item">
 					<a
 						class="nav-link <%= path === '/' ? 'active' : '' %>"
@@ -94,7 +93,10 @@
 					>
 					<ul class="dropdown-menu" aria-labelledby="navbarEventsNav">
 						<li>
-							<a href="/event-calendar" class="dropdown-item" style="color: #000"
+							<a
+								href="/event-calendar"
+								class="dropdown-item"
+								style="color: #000"
 								>Event Calendar</a
 							>
 						</li>
@@ -105,6 +107,8 @@
 						</li>
 					</ul>
 				</li>
+				<!-- Admin Events -->
+				<% if (isAuthenticated) { %>
 				<li class="nav-item dropdown">
 					<a
 						class="nav-link dropdown-toggle"
@@ -117,17 +121,24 @@
 					>
 					<ul class="dropdown-menu" aria-labelledby="navbarAdminEventsNav">
 						<li>
-							<a href="/admin/admin-event-calendar" class="dropdown-item" style="color: #000"
+							<a
+								href="/admin/admin-event-calendar"
+								class="dropdown-item"
+								style="color: #000"
 								>Admin Event Calendar</a
 							>
 						</li>
 						<li>
-							<a href="/admin/admin-event-photos" class="dropdown-item" style="color: #000"
+							<a
+								href="/admin/admin-event-photos"
+								class="dropdown-item"
+								style="color: #000"
 								>Admin Event Photos</a
 							>
 						</li>
 					</ul>
 				</li>
+				<% } %>
 				<li class="nav-item">
 					<a
 						class="nav-link <%= path === '/contact' ? 'active' : '' %>"
@@ -151,7 +162,7 @@
 
 <!-- MODAL SIGN IN -->
 
-<!-- <div
+<div
 	class="modal fade"
 	id="adminModal"
 	tabindex="-1"
@@ -178,7 +189,7 @@
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 
 <!-- END MODAL -->
 

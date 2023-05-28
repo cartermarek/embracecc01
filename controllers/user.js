@@ -7,6 +7,7 @@ exports.getHome = (req, res, next) => {
 	res.render("user/index", {
 		pageTitle: "Home",
 		path: "/",
+		isAuthenticated: req.isLoggedIn
 	});
 };
 
@@ -15,6 +16,7 @@ exports.getAboutPastor = (req, res, next) => {
 	res.render("user/about/pastor", {
 		pageTitle: "About Pastor Tony",
 		path: "/pastor",
+		isAuthenticated: req.isLoggedIn
 	});
 };
 
@@ -23,6 +25,7 @@ exports.getAboutChurch = (req, res, next) => {
 	res.render("user/about/church-vision", {
 		pageTitle: "About Church Vision",
 		path: "/church-vision",
+		isAuthenticated: req.isLoggedIn
 	});
 };
 
@@ -31,6 +34,7 @@ exports.getEventCalendar = (req, res, next) => {
 	res.render("user/event/event-calendar", {
 		pageTitle: "Event Calendar",
 		path: "/event-calendar",
+		isAuthenticated: req.isLoggedIn
 	});
 };
 
@@ -41,6 +45,7 @@ exports.getEventPhotos = (req, res, next) => {
 			albums: albums,
 			pageTitle: "Event Photos",
 			path: "/event-photos",
+			isAuthenticated: req.isLoggedIn
 		});
 	})
 };
@@ -50,6 +55,7 @@ exports.getContact = (req, res, next) => {
 	res.render("user/contact", {
 		pageTitle: "Contact Us",
 		path: "/contact",
+		isAuthenticated: req.isLoggedIn
 	});
 };
 
@@ -57,6 +63,7 @@ exports.getContact = (req, res, next) => {
 exports.getGiving = (req, res, next) => {
 	res.render('user/giving', {
 		pageTitle: 'Giving',
-		path: '/giving'
+		path: '/giving',
+		isAuthenticated: req.isLoggedIn
 	})
 }

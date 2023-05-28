@@ -10,6 +10,7 @@ exports.getEventCalendar = (req, res, next) => {
 			albums: albums,
 			pageTitle: "Admin Event Calendar",
 			path: "/admin/admin-event-calendar",
+			isAuthenticated: req.isLoggedIn
 		});
 	});
 };
@@ -21,6 +22,7 @@ exports.getEventPhotos = (req, res, next) => {
 			albums: albums,
 			pageTitle: "Admin Event Photos",
 			path: "/admin/admin-event-photos",
+			isAuthenticated: req.isLoggedIn
 		});
 	});
 };
@@ -30,6 +32,7 @@ exports.getAddAlbum = (req, res, next) => {
 	res.render("admin/add-photo", {
 		pageTitle: "Add Photo to Album",
 		path: "/admin/add-photo",
+		isAuthenticated: req.isLoggedIn
 	});
 };
 
@@ -71,9 +74,10 @@ exports.getEditProduct = (req, res, next) => {
 				path: "/admin/edit-photo",
 				editing: editMode,
 				album: album,
+				isAuthenticated: req.isLoggedIn
 			});
 		})
-		.catch((err0) => console.log(err));
+		.catch((err) => console.log(err));
 };
 
 // update photo
@@ -82,7 +86,7 @@ exports.postEditPhoto = (req, res, next) => {
 	const updatedTitle = req.body.title;
 	const updatedImageUrl = req.body.imageUrl;
 	const updatedCategory = req.body.category;
-	const updatedDesc = req.body.category;
+	const updatedDesc = req.body.description;
 	Album.findByPk(albId)
 		.then((album) => {
 			album.title = updatedTitle;
